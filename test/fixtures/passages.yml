@@ -1,0 +1,13 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  text: MyText
+  language: MyString
+  skill_level: 1
+  time_alloted: 1
+
+two:
+  text: MyText
+  language: MyString
+  skill_level: 1
+  time_alloted: 1
