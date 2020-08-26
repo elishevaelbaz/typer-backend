@@ -43,3 +43,9 @@ end
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 gem 'faker'
+
+# dot-env to hide api keys
+# gem 'dotenv-rails', groups: [:development, :test]
+
+#rest-client to communicate with API
+gem 'rest-client'
