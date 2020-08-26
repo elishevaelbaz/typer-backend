@@ -7,7 +7,7 @@
 
 Rails.application.config.middleware.insert_before 0, Rack::Cors do
   allow do
-    origins 'localhost:3001', 'https://typ3out.netlify.app/' #when deploy, change to also include hosted frontend server
+    origins 'localhost:3001', 'https://typ3out.netlify.app' #when deploy, change to also include hosted frontend server
 
     resource '*',
       headers: :any,
