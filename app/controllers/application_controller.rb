@@ -8,7 +8,7 @@ class ApplicationController < ActionController::API
 
   #setting instance variable of current user
   def set_current_user! #naming convention to have the !
-    @current_user = User.find_by(id: session[:user_id])
+    @current_user = User.find_by(id: session[:user_id][:value])
   end
 
   def authorized

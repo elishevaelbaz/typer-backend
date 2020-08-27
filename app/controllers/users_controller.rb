@@ -8,7 +8,10 @@ class UsersController < ApplicationController
     user = User.create(user_params)
     
     if user.valid?
-      session[:user_id] = user.id
+      session[:user_id] = {
+        value: user.id,
+        same_site: :none
+      }
       render json: user
     else 
       render json: { messages: user.errors.full_messages}, status: :bad_request
@@ -22,7 +25,11 @@ class UsersController < ApplicationController
     user = User.find_by(username: params[:username])
 
     if user && user.authenticate(params[:password])
-      session[:user_id] = user.id
+      session[:user_id] = {
+        value: user.id,
+        same_site: :none
+      }
+      # session[:user_id] = user.id
       render json: user
     else 
       render json: { message: "Invalid username or password"}, status: :unauthorized

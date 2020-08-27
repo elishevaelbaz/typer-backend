@@ -12,7 +12,7 @@ class GamesController < ApplicationController
   end
 
   def userstats
-    games = Game.where(user_id: session[:user_id])
+    games = Game.where(user_id: session[:user_id][:value])
     render json: games, each_serializer: ScoreSerializer
   end
 
