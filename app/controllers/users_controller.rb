@@ -30,9 +30,7 @@ class UsersController < ApplicationController
       #   value: user.id,
       #   same_site: :lax
       # }
-      # byebug
       session[:user_id] = user.id
-      # byebug
       render json: user
     else 
       render json: { message: "Invalid username or password"}, status: :unauthorized
@@ -42,7 +40,6 @@ class UsersController < ApplicationController
   #before_action :authorized
   # will have @current_user
   def autologin
-    # byebug
     render json: @current_user
   end
 

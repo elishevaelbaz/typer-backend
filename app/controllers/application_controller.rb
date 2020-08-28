@@ -8,13 +8,11 @@ class ApplicationController < ActionController::API
 
   #setting instance variable of current user
   def set_current_user! #naming convention to have the !
-    # byebug
     @current_user = User.find_by(id: session[:user_id])
     # @current_user = User.find_by(id: session[:user_id][:value])
   end
 
   def authorized
-    # byebug
     set_current_user!
     unless @current_user # if a user is not logged in render the json below
       render json: {message: "Not logged in"}, status: :unauthorized
