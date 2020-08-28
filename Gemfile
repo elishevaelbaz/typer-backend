@@ -49,3 +49,5 @@ gem 'faker'
 
 #rest-client to communicate with API
 gem 'rest-client'
+
+gem 'rails_same_site_cookie'

@@ -3,6 +3,7 @@ class PassagesController < ApplicationController
   skip_before_action :authorized, only: [:index]
   
   def index
+    # byebug
     passages = Passage.all
 
     render json: passages

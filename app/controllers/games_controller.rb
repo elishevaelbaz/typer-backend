@@ -12,7 +12,9 @@ class GamesController < ApplicationController
   end
 
   def userstats
-    games = Game.where(user_id: session[:user_id][:value])
+    # byebug
+    games = Game.where(user_id: session[:user_id])
+    # games = Game.where(user_id: session[:user_id][:value])
     render json: games, each_serializer: ScoreSerializer
   end
 
@@ -29,6 +31,7 @@ class GamesController < ApplicationController
     # user_id = User.first.id
     # find a random passage
     # passage_id = Passage.pluck(:id).sample
+    # byebug
     game = Game.create(user_id: @current_user.id, passage_id: params[:passage_id]) #speed: params[:speed], accuracy: params[:accuracy],
     # byebug
     render json: game
