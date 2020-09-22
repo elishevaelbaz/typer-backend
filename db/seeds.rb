@@ -70,7 +70,6 @@ p4 = Passage.create(text: demo, name: "Demo (short)", language: "English", skill
 p5 = Passage.create(text: thetrial, name: "The Trial", language: "English", skill_level: 2, time_allotted: 60)
 p6 = Passage.create(text: bitcoinwhitepaper, name: "Bitcoin Whitepaper", language: "English", skill_level: 2, time_allotted: 30)
 p7 = Passage.create(text: nineteen84, name: "1984", language: "English", skill_level: 2, time_allotted: 60)
-p8 = Passage.create(text: nineteen84, name: "1984", language: "English", skill_level: 2, time_allotted: 60)
 p9 = Passage.create(text: hillhouse, name: "Haunting of Hill House", language: "English", skill_level: 2, time_allotted: 60)
 p10 = Passage.create(text: yellowwallpaper, name: "The Yellow Wallpaper", language: "English", skill_level: 2, time_allotted: 60)
 p11 = Passage.create(text: kaiserslackey, name: "Man of Straw", language: "English", skill_level: 2, time_allotted: 60)
