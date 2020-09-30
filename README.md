@@ -19,8 +19,16 @@ Users are able to:
 - [Frontend:](https://github.com/elishevaelbaz/typer-frontend) React.js   
 - [Backend:](https://github.com/elishevaelbaz/typer-backend) Ruby On Rails, PostgreSQL  
 
+### Getting started
+#### To run on your local machine:
 
-__To run on your local machine:__  
+#### Prerequisites:
+- Node.js
+- npm
+- Ruby on Rails
+- PostgreSQL
+
+#### Instructions:  
 Clone both the [frontend](https://github.com/elishevaelbaz/typer-frontend) and the [backend](https://github.com/elishevaelbaz/typer-backend) repositories onto your machine using `git clone`.  
 
 `cd` into the backend repository  
