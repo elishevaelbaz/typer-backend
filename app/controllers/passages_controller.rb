@@ -3,7 +3,6 @@ class PassagesController < ApplicationController
   skip_before_action :authorized, only: [:index]
   
   def index
-    # byebug
     passages = Passage.all
 
     render json: passages
@@ -12,7 +11,6 @@ class PassagesController < ApplicationController
   def create
     passage = Passage.create(passage_params) 
     if passage.valid?
-    # byebug
       render json: passage
     else 
       render json: { messages: passage.errors.full_messages}, status: :bad_request
